@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridLayout;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -22,6 +23,8 @@ public class RefineActivity extends AppCompatActivity {
     private TextView tvDistanceValue;
     private Button buttonSaveExplore;
 
+    private ImageView backIcon;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +34,7 @@ public class RefineActivity extends AppCompatActivity {
         editStatus = findViewById(R.id.edit_status);
         seekBarDistance = findViewById(R.id.seekbar_distance);
         buttonSaveExplore = findViewById(R.id.button_save_explore);
+        backIcon = findViewById(R.id.back_icon);
 
         // Create an ArrayAdapter using the custom spinner item layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -76,5 +80,12 @@ public class RefineActivity extends AppCompatActivity {
                 }
             });
         }
+
+        backIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }
