@@ -12,19 +12,20 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="#002B45"
+        android:background="@color/defaultColor"
         android:orientation="horizontal"
+        android:gravity="center_vertical"
         android:padding="16dp">
 
         <ImageView
             android:id="@+id/menu_icon"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
             android:src="@drawable/menu"
             app:tint="#FFFFFF" />
 
         <View
-            android:layout_width="10dp"
+            android:layout_width="15dp"
             android:layout_height="match_parent" />
 
         <LinearLayout
@@ -68,10 +69,10 @@
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/notification_icon"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/notification"
+            android:id="@+id/refine"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/baseline_checklist_24"
             app:tint="#FFFFFF" />
     </LinearLayout>
 
@@ -213,7 +214,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="+ INVITE"
-                                android:textColor="#002B45"
+                                android:textColor="@color/defaultColor"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -237,7 +238,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Michael Murphy"
-                                    android:textColor="#002B45"
+                                    android:textColor="@color/defaultColor"
                                     android:textSize="16sp"
                                     android:textStyle="bold" />
 
@@ -261,7 +262,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
                                 android:text="Friendship | Coffee | Hangout"
-                                android:textColor="#002B45"
+                                android:textColor="@color/defaultColor"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
 
@@ -325,7 +326,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="+ INVITE"
-                                android:textColor="#002B45"
+                                android:textColor="@color/defaultColor"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -349,7 +350,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Michael Murphy"
-                                    android:textColor="#002B45"
+                                    android:textColor="@color/defaultColor"
                                     android:textSize="16sp"
                                     android:textStyle="bold" />
 
@@ -373,7 +374,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
                                 android:text="Friendship | Coffee | Hangout"
-                                android:textColor="#002B45"
+                                android:textColor="@color/defaultColor"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
 
@@ -437,7 +438,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="+ INVITE"
-                                android:textColor="#002B45"
+                                android:textColor="@color/defaultColor"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -461,7 +462,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Michael Murphy"
-                                    android:textColor="#002B45"
+                                    android:textColor="@color/defaultColor"
                                     android:textSize="16sp"
                                     android:textStyle="bold" />
 
@@ -485,7 +486,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
                                 android:text="Friendship | Coffee | Hangout"
-                                android:textColor="#002B45"
+                                android:textColor="@color/defaultColor"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
 
@@ -549,7 +550,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="+ INVITE"
-                                android:textColor="#002B45"
+                                android:textColor="@color/defaultColor"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -573,7 +574,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Michael Murphy"
-                                    android:textColor="#002B45"
+                                    android:textColor="@color/defaultColor"
                                     android:textSize="16sp"
                                     android:textStyle="bold" />
 
@@ -597,7 +598,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
                                 android:text="Friendship | Coffee | Hangout"
-                                android:textColor="#002B45"
+                                android:textColor="@color/defaultColor"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
 

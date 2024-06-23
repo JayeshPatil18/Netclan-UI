@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".RefineActivity">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/defaultColor"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            app:tint="#FFFFFF" />
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/explore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Refine"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Spinner for Availability -->
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner_availability"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:entries="@array/availability_options" />-->
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:padding="20dp"
+     android:orientation="vertical">
+
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="16dp"
+         android:text="Add Your Avilablity"
+         android:textColor="@color/defaultColor"
+         android:textStyle="bold" />
+
+     <!-- Spinner for Availability -->
+     <Spinner
+         android:id="@+id/spinner_availability"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/edittext"
+         android:padding="15dp"
+         android:layout_marginTop="16dp"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:text="Add Your status"
+         android:textColor="@color/defaultColor"
+         android:textStyle="bold" />
+
+     <!-- Edit Text for Status -->
+     <EditText
+         android:id="@+id/edit_status"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="16dp"
+         android:padding="10dp"
+         android:background="@drawable/edittext"
+         android:hint="Add Your Status"
+         android:text="Hi community! I am open to new connections 😊"
+         android:maxLength="250" />
+
+     <!-- Label for Distance -->
+     <TextView
+         android:id="@+id/tv_distance_label"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:text="Select Hyper local Distance"
+         android:textColor="@color/defaultColor"
+         android:textStyle="bold" />
+
+     <!-- SeekBar for Distance with a RelativeLayout for displaying progress -->
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginTop="18dp">
+
+         <SeekBar
+             android:id="@+id/seekbar_distance"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:max="99"
+             android:progress="67"
+             android:progressTint="@color/defaultColor"
+             android:layout_marginTop="20dp"
+             android:thumbTint="@color/defaultColor"/>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/defaultColor"
+                 android:text="1Km" />
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="2dp"
+                 android:layout_weight="2"/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/defaultColor"
+                 android:text="100Km" />
+         </LinearLayout>
+     </LinearLayout>
+
+     <!-- Label for Purpose -->
+     <TextView
+         android:id="@+id/tv_purpose_label"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:text="Select Purpose"
+         android:textColor="@color/defaultColor"
+         android:textStyle="bold" />
+
+     <!-- GridLayout for Purpose Options -->
+     <GridLayout
+         android:id="@+id/grid_purpose"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="8dp"
+         android:columnCount="4"
+         android:rowCount="2"
+         android:orientation="horizontal">
+
+         <Button
+             android:id="@+id/button_coffee"
+             style="@style/PurposeButton"
+             android:layout_height="40dp"
+             android:drawablePadding="0dp"
+             android:text="Coffee"
+             android:textAllCaps="false"
+             android:textSize="12sp" />
+
+         <Button
+             android:id="@+id/button_business"
+             style="@style/PurposeButton"
+             android:layout_height="40dp"
+             android:drawablePadding="0dp"
+             android:text="Business"
+             android:textAllCaps="false"
+             android:textSize="12sp" />
+
+         <Button
+             android:id="@+id/button_hobbies"
+             style="@style/PurposeButton"
+             android:layout_height="40dp"
+             android:drawablePadding="0dp"
+             android:text="Hobbies"
+             android:textAllCaps="false"
+             android:textSize="12sp" />
+
+         <Button
+             android:id="@+id/button_friendship"
+             style="@style/PurposeButton"
+             android:layout_height="40dp"
+             android:drawablePadding="0dp"
+             android:text="Friendship"
+             android:textAllCaps="false"
+             android:textSize="12sp" />
+
+         <Button
+             android:id="@+id/button_movies"
+             style="@style/PurposeButton"
+             android:layout_height="40dp"
+             android:drawablePadding="0dp"
+             android:text="Movies"
+             android:textAllCaps="false"
+             android:textSize="12sp" />
+
+         <Button
+             android:id="@+id/button_dining"
+             style="@style/PurposeButton"
+             android:layout_height="40dp"
+             android:drawablePadding="0dp"
+             android:text="Dining"
+             android:textAllCaps="false"
+             android:textSize="12sp" />
+
+         <Button
+             android:id="@+id/button_dating"
+             style="@style/PurposeButton"
+             android:layout_height="40dp"
+             android:drawablePadding="0dp"
+             android:text="Dating"
+             android:textAllCaps="false"
+             android:textSize="12sp" />
+
+         <Button
+             android:id="@+id/button_matrimony"
+             style="@style/PurposeButton"
+             android:layout_height="40dp"
+             android:drawablePadding="0dp"
+             android:text="Matrimony"
+             android:textAllCaps="false"
+             android:textSize="12sp" />
+     </GridLayout>
+
+     <!-- Save & Explore Button -->
+     <Button
+         android:id="@+id/button_save_explore"
+         android:layout_width="wrap_content"
+         android:background="@drawable/btn_bg"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="40dp"
+         android:paddingStart="40dp"
+         android:textColor="#FFFFFF"
+         android:paddingEnd="40dp"
+         android:layout_gravity="center"
+         android:textAllCaps="false"
+         android:text="Save &amp; Explore" />
+ </LinearLayout>
+</LinearLayout>
