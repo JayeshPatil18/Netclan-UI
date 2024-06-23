@@ -10,8 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:orientation="vertical">
 
 
         <!-- Toolbar -->
@@ -20,8 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="73dp"
             android:background="@color/defaultColor"
-            android:orientation="horizontal"
             android:gravity="center_vertical"
+            android:orientation="horizontal"
             android:padding="16dp">
 
             <ImageView
@@ -139,18 +139,19 @@
                 android:textSize="14sp"
                 android:textStyle="bold" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tabs"
             android:background="@color/defaultColor"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <View
                 android:layout_width="120dp"
                 android:layout_height="2dp"
                 android:layout_marginBottom="0.05dp"
-                android:background="#FFFFFF"/>
+                android:background="#FFFFFF" />
 
         </LinearLayout>
 
@@ -168,17 +169,17 @@
 
             <EditText
                 android:id="@+id/search_bar"
-                android:drawableLeft="@drawable/baseline_search_24"
-                android:drawablePadding="6dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="35dp"
                 android:background="@drawable/searchbar"
+                android:drawableLeft="@drawable/baseline_search_24"
+                android:drawablePadding="6dp"
                 android:hint="Search"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
                 android:paddingStart="10dp"
+                android:paddingTop="5dp"
                 android:paddingEnd="16dp"
+                android:paddingBottom="5dp"
                 android:singleLine="true"
                 android:textColor="@color/defaultColor"
                 android:textSize="14sp" />
@@ -212,11 +213,11 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="20dp"
                         android:layout_marginStart="25dp"
-                        android:layout_marginEnd="15dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="8dp">
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        app:cardCornerRadius="20dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -232,7 +233,7 @@
                                 <View
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"/>
+                                    android:layout_weight="1" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -249,8 +250,8 @@
                                 android:orientation="horizontal">
 
                                 <View
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"/>
+                                    android:layout_width="76dp"
+                                    android:layout_height="56dp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -269,10 +270,24 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="4dp"
+                                        android:layout_marginTop="5dp"
                                         android:text="San Francisco, within 1 Km"
-                                        android:textColor="#AAB1B6"
+                                        android:textColor="#CB0B2D40"
                                         android:textSize="12sp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="140dp"
+                                        android:layout_height="12dp"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/unbar">
+
+                                        <View
+                                            android:layout_width="90dp"
+                                            android:layout_height="12dp"
+                                            android:background="@drawable/bar" />
+                                        />
+                                    </RelativeLayout>
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -295,23 +310,23 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="4dp"
                                     android:text="Hi community! I am open to new connections."
-                                    android:textColor="#AAB1B6"
+                                    android:textColor="#CB0B2D40"
                                     android:textSize="12sp" />
                             </LinearLayout>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:elevation="10dp"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginStart="15dp"
                         android:layout_marginTop="25dp"
-                        android:layout_marginStart="10dp"
+                        android:elevation="10dp"
                         app:cardCornerRadius="8dp">
 
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
                             android:src="@drawable/a1" />
                     </androidx.cardview.widget.CardView>
 
@@ -324,11 +339,11 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="20dp"
                         android:layout_marginStart="25dp"
-                        android:layout_marginEnd="15dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="8dp">
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        app:cardCornerRadius="20dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -344,7 +359,7 @@
                                 <View
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"/>
+                                    android:layout_weight="1" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -361,8 +376,8 @@
                                 android:orientation="horizontal">
 
                                 <View
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"/>
+                                    android:layout_width="76dp"
+                                    android:layout_height="56dp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -381,10 +396,24 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="4dp"
+                                        android:layout_marginTop="5dp"
                                         android:text="San Francisco, within 1 Km"
-                                        android:textColor="#AAB1B6"
+                                        android:textColor="#CB0B2D40"
                                         android:textSize="12sp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="140dp"
+                                        android:layout_height="12dp"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/unbar">
+
+                                        <View
+                                            android:layout_width="90dp"
+                                            android:layout_height="12dp"
+                                            android:background="@drawable/bar" />
+                                        />
+                                    </RelativeLayout>
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -407,23 +436,23 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="4dp"
                                     android:text="Hi community! I am open to new connections."
-                                    android:textColor="#AAB1B6"
+                                    android:textColor="#CB0B2D40"
                                     android:textSize="12sp" />
                             </LinearLayout>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:elevation="10dp"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginStart="15dp"
                         android:layout_marginTop="25dp"
-                        android:layout_marginStart="10dp"
+                        android:elevation="10dp"
                         app:cardCornerRadius="8dp">
 
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
                             android:src="@drawable/a2" />
                     </androidx.cardview.widget.CardView>
 
@@ -436,11 +465,11 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="20dp"
                         android:layout_marginStart="25dp"
-                        android:layout_marginEnd="15dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="8dp">
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        app:cardCornerRadius="20dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -456,7 +485,7 @@
                                 <View
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"/>
+                                    android:layout_weight="1" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -473,8 +502,8 @@
                                 android:orientation="horizontal">
 
                                 <View
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"/>
+                                    android:layout_width="76dp"
+                                    android:layout_height="56dp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -493,10 +522,24 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="4dp"
+                                        android:layout_marginTop="5dp"
                                         android:text="San Francisco, within 1 Km"
-                                        android:textColor="#AAB1B6"
+                                        android:textColor="#CB0B2D40"
                                         android:textSize="12sp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="140dp"
+                                        android:layout_height="12dp"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/unbar">
+
+                                        <View
+                                            android:layout_width="90dp"
+                                            android:layout_height="12dp"
+                                            android:background="@drawable/bar" />
+                                        />
+                                    </RelativeLayout>
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -519,23 +562,23 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="4dp"
                                     android:text="Hi community! I am open to new connections."
-                                    android:textColor="#AAB1B6"
+                                    android:textColor="#CB0B2D40"
                                     android:textSize="12sp" />
                             </LinearLayout>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:elevation="10dp"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginStart="15dp"
                         android:layout_marginTop="25dp"
-                        android:layout_marginStart="10dp"
+                        android:elevation="10dp"
                         app:cardCornerRadius="8dp">
 
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
                             android:src="@drawable/a3" />
                     </androidx.cardview.widget.CardView>
 
@@ -548,11 +591,11 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="20dp"
                         android:layout_marginStart="25dp"
-                        android:layout_marginEnd="15dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="8dp">
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        app:cardCornerRadius="20dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -568,7 +611,7 @@
                                 <View
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"/>
+                                    android:layout_weight="1" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -585,8 +628,8 @@
                                 android:orientation="horizontal">
 
                                 <View
-                                    android:layout_width="56dp"
-                                    android:layout_height="56dp"/>
+                                    android:layout_width="76dp"
+                                    android:layout_height="56dp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -605,10 +648,24 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="4dp"
+                                        android:layout_marginTop="5dp"
                                         android:text="San Francisco, within 1 Km"
-                                        android:textColor="#AAB1B6"
+                                        android:textColor="#CB0B2D40"
                                         android:textSize="12sp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="140dp"
+                                        android:layout_height="12dp"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/unbar">
+
+                                        <View
+                                            android:layout_width="90dp"
+                                            android:layout_height="12dp"
+                                            android:background="@drawable/bar" />
+                                        />
+                                    </RelativeLayout>
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -631,23 +688,23 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="4dp"
                                     android:text="Hi community! I am open to new connections."
-                                    android:textColor="#AAB1B6"
+                                    android:textColor="#CB0B2D40"
                                     android:textSize="12sp" />
                             </LinearLayout>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:elevation="10dp"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginStart="15dp"
                         android:layout_marginTop="25dp"
-                        android:layout_marginStart="10dp"
+                        android:elevation="10dp"
                         app:cardCornerRadius="8dp">
 
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
                             android:src="@drawable/a4" />
                     </androidx.cardview.widget.CardView>
 
