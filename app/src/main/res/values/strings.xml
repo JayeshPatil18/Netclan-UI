@@ -2,9 +2,9 @@
     <string name="app_name">Netclan UI</string>
     <string-array name="availability_options">
         <item>Busy | Do Not Disturb | Will Catch Up Later</item>
-        <item>Available</item>
-        <item>Offline</item>
-        <item>Custom</item>
+        <item>Available | Hey Let Us Connect</item>
+        <item>Away | Stay Discrete And Watch</item>
+        <item>SOS | Emergency! Need Assistance! HELP</item>
     </string-array>
 </resources>
 

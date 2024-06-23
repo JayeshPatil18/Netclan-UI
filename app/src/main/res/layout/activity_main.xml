@@ -11,7 +11,7 @@
     <LinearLayout
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="73dp"
         android:background="@color/defaultColor"
         android:orientation="horizontal"
         android:gravity="center_vertical"
@@ -68,12 +68,25 @@
 
         </LinearLayout>
 
-        <ImageView
+        <LinearLayout
             android:id="@+id/refine"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:src="@drawable/baseline_checklist_24"
-            app:tint="#FFFFFF" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/baseline_checklist_24"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Refine"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
     </LinearLayout>
 
     <!-- Tabs -->
