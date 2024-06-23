@@ -12,6 +12,8 @@ The UI involves two Screens, the "Refine" and "Explore" screens based on the des
 
 </br>
 
+*Apk Link* [Click here](https://github.com/JayeshPatil18/Netclan-UI/app-debug.apk)
+
 ![Available](https://github.com/JayeshPatil18/Netclan-UI/blob/master/netclan-ui.png)
 
 ## Technology Used
