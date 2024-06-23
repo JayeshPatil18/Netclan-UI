@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 public class RefineActivity extends AppCompatActivity {
 
+    private Spinner spinnerAvailability;
     private EditText editStatus;
     private SeekBar seekBarDistance;
     private TextView tvDistanceValue;
@@ -25,9 +26,23 @@ public class RefineActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_refine);
 
+        spinnerAvailability = findViewById(R.id.spinner_availability);
         editStatus = findViewById(R.id.edit_status);
         seekBarDistance = findViewById(R.id.seekbar_distance);
         buttonSaveExplore = findViewById(R.id.button_save_explore);
+
+        // Handle spinner selection
+        spinnerAvailability.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                // Handle selection
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                // Handle no selection
+            }
+        });
 
         // Handle button click
         buttonSaveExplore.setOnClickListener(new View.OnClickListener() {

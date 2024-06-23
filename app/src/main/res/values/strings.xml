@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Netclan UI</string>
+    <string-array name="availability_options">
+        <item>Busy | Do Not Disturb | Will Catch Up Later</item>
+        <item>Available</item>
+        <item>Offline</item>
+        <item>Custom</item>
+    </string-array>
 </resources>
+
