@@ -1,5 +1,5 @@
 <div align="left">
-  <h1>Netclan-UI🙋 - Android App</h1>
+  <h1>Netclan-UI📱 - Android App</h1>
   <img alt="Android" src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" style="margin-left: 10px;">
   <img alt="Java" src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" style="margin-left: 10px;">
   <a href="https://github.com/JayeshPatil18/Netclan-UI">
