@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridLayout;
@@ -30,6 +31,16 @@ public class RefineActivity extends AppCompatActivity {
         editStatus = findViewById(R.id.edit_status);
         seekBarDistance = findViewById(R.id.seekbar_distance);
         buttonSaveExplore = findViewById(R.id.button_save_explore);
+
+        // Create an ArrayAdapter using the custom spinner item layout
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.availability_options, R.layout.spinner_item);
+
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // Apply the adapter to the spinner
+        spinnerAvailability.setAdapter(adapter);
 
         // Handle spinner selection
         spinnerAvailability.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
